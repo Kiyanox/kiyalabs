@@ -33,5 +33,7 @@ public class Kiyalabs
         arsenopyriteOre = new KiyaMaterials(Material.rock, "arsenopyriteOre", dustArsenopyrite);
         GameRegistry.registerBlock(arsenopyriteOre, "arsenopyriteOre");
         
+        GameRegistry.registerWorldGenerator(new OreGeneration(arsenopyriteOre, 8), 0);
+        
     } 
 }
