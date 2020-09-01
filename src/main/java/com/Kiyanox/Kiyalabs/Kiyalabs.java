@@ -2,10 +2,8 @@ package com.Kiyanox.Kiyalabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-import java.util.Random;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -21,53 +19,14 @@ public class Kiyalabs
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        Item crystallizedbanVilljo = new ModItem("crystallizedbanVilljo");
+        Item crystallizedbanVilljo = new KiyaItem("crystallizedbanVilljo");
         GameRegistry.registerItem(crystallizedbanVilljo, "crystallizedbanVilljo");
         
-        Item blockVilljo = new ModItem("blockVilljo");
+        Item blockVilljo = new KiyaItem("blockVilljo");
         GameRegistry.registerItem(blockVilljo, "blockVilljo");
         
-        Block banvilljoOre = new ModBlock(Material.rock, "banvilljoOre", crystallizedbanVilljo);
+        Block banvilljoOre = new KiyaMaterials(Material.rock, "banvilljoOre", crystallizedbanVilljo);
         GameRegistry.registerBlock(banvilljoOre, "banvilljoOre");
         
-    }
-    
-    private class ModItem extends Item
-    {
-        public ModItem(String itemName)
-        {
-            this.setUnlocalizedName(itemName);
-            this.setTextureName(MODID + ":" + itemName);
-            this.setCreativeTab(CreativeTabs.tabMisc);
-        }
-
-    }
-    
-    private class ModBlock extends Block
-    {
-    	
-    	private Item toDrop;
-    	
-    	public ModBlock(Material material, String blockName, Item toDrop)
-        {
-            super(material);
-            this.setBlockName(blockName);
-            this.setBlockTextureName(MODID + ":" + blockName);
-            this.setCreativeTab(CreativeTabs.tabBlock);
-            this.setHardness(4.0F);
-            this.setStepSound(soundTypeStone);
-            this.setHarvestLevel("pickaxe", 1);
-            this.toDrop = toDrop;
-        }
-        
-        @Override
-        public Item getItemDropped(int i, Random random, int j)
-        {
-            if(toDrop != null)
-            {
-                return toDrop;
-            }
-            else return Item.getItemFromBlock(this);
-        }        
-    }
+    } 
 }
