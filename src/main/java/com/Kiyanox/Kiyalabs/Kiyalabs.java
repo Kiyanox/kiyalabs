@@ -14,19 +14,24 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class Kiyalabs
 {
     public static final String MODID = "Kiyalabs";
-    public static final String VERSION = "1.1";
+    public static final String VERSION = "0.0.1";
+    
+    //Item Publicity
+    public static Item dustArsenopyrite;
+    public static Item blockArsen;
+    public static Block arsenopyriteOre;
    
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        Item crystallizedbanVilljo = new KiyaItem("crystallizedbanVilljo");
-        GameRegistry.registerItem(crystallizedbanVilljo, "crystallizedbanVilljo");
+    	dustArsenopyrite = new KiyaItem("dustArsenopyrite");
+        GameRegistry.registerItem(dustArsenopyrite, "dustArsenopyrite");
         
-        Item blockVilljo = new KiyaItem("blockVilljo");
-        GameRegistry.registerItem(blockVilljo, "blockVilljo");
+        blockArsen = new KiyaItem("blockArsen");
+        GameRegistry.registerItem(blockArsen, "blockArsen");
         
-        Block banvilljoOre = new KiyaMaterials(Material.rock, "banvilljoOre", crystallizedbanVilljo);
-        GameRegistry.registerBlock(banvilljoOre, "banvilljoOre");
+        arsenopyriteOre = new KiyaMaterials(Material.rock, "arsenopyriteOre", dustArsenopyrite);
+        GameRegistry.registerBlock(arsenopyriteOre, "arsenopyriteOre");
         
     } 
 }
