@@ -1,4 +1,4 @@
-package com.Kiyanox.Kiyalabs;
+package com.kiyanox.kiyalabs;
 
 import java.util.Random;
 

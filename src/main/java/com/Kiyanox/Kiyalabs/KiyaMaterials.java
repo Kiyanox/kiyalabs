@@ -1,4 +1,4 @@
-package com.Kiyanox.Kiyalabs;
+package com.kiyanox.kiyalabs;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ public class KiyaMaterials extends Block
     {
         super(material);
         this.setBlockName(blockName);
-        this.setBlockTextureName(Kiyalabs.MODID + ":" + blockName);
+        this.setBlockTextureName(Kiyalabs_main.MODID + ":" + blockName);
         this.setCreativeTab(CreativeTabs.tabBlock);
         this.setHardness(4.0F);
         this.setStepSound(soundTypeStone);
