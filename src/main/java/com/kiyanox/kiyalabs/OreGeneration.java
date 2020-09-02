@@ -23,9 +23,9 @@ public class OreGeneration implements IWorldGenerator {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
 		
-		if(world.provider.dimensionId == -1)
+		if(world.provider.dimensionId == 0)
 		{
-			this.runGenerator(new WorldGenMinable(block, veinSize), world, random, chunkX, chunkZ, 10, 0, 35);
+			this.runGenerator(new WorldGenMinable(block, veinSize), world, random, chunkX, chunkZ, 10, 0, 120);
 		}
 	}
 	

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "kiyalabs",
+  "name": "Kiyalabs",
+  "description": "Kiyanox Lab Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kiyanox"],
+  "credits": "123",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
