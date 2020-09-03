@@ -1,2 +1,2 @@
 # kiyalabs
-Kiyalabs Mod
+A Minecraft Mod Extension
