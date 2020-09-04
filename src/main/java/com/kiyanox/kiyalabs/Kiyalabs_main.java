@@ -11,8 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class Kiyalabs_main
 {
     public static final String MODID = "kiyalabs";
-    public static final String MODNAME = "Kiyalabs";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "0.1.1_unstable";
     
     //############################# PROXY ###############################################
     
