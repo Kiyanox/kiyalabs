@@ -10,6 +10,7 @@ public class Client extends ProxyInstance {
     public void preInit(FMLPreInitializationEvent event) {
     	KiyaItem.init();
     	KiyalabsBlock.init();
+    	CraftingRecipes.init();
     }
 
     @Override

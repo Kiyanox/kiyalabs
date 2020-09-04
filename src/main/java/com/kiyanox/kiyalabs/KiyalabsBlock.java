@@ -12,6 +12,7 @@ public class KiyalabsBlock {
 	public static Block loranditeOre;
 	public static Block stibiopalladiniteOre;
 	public static Block corundumOre;
+	public static Block BlockKiyanum;
 
 	    public static final void init() {
 	    	
@@ -21,5 +22,6 @@ public class KiyalabsBlock {
 			GameRegistry.registerBlock(loranditeOre = new KiyaMaterials("loranditeOre", Material.rock), "loranditeOre");
 			GameRegistry.registerBlock(stibiopalladiniteOre = new KiyaMaterials("stibiopalladiniteOre", Material.rock), "stibiopalladiniteOre");
 			GameRegistry.registerBlock(corundumOre = new KiyaMaterials("corundumOre", Material.rock), "corundumOre");
+			GameRegistry.registerBlock(BlockKiyanum = new KiyaMaterials("BlockKiyanum", Material.rock), "BlockKiyanum");
 	    }
 }
