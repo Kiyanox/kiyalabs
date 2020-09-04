@@ -1,2 +1,13 @@
 tile.arsenopyriteOre.name=Arsenopyrite Ore
+tile.aldermaniteOre.name=Aldermanite Ore
+tile.KiyanumOre.name=Kiyanum Ore
+tile.loranditeOre.name=Lorandite Ore
+tile.stibiopalladiniteOre.name=Stibiopalladinite Ore
+tile.corundumOre.name=Corundum Ore
+
 item.arsenopyriteDust.name=Arsenopyrite Dust
+item.aldermaniteDust.name=Aldermanite Dust
+item.KiyanumaldermaniteDust.name=Kiyanum Dust
+item.loranditealdermaniteDust.name=Lorandite Dust
+item.stibiopalladiniteDust.name=Stibiopalladinite Dust
+item.corundumDust.name=Corundum Dust
